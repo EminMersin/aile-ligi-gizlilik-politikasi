@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gizlilik Politikası — Aile Ligi</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 32px 20px 64px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.65;
+    color: #1b1f24;
+    background: #f6f7f9;
+  }
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 40px 36px;
+    box-shadow: 0 2px 16px rgba(16, 24, 40, 0.08);
+  }
+  h1 { font-size: 28px; margin: 0 0 4px; letter-spacing: -0.4px; }
+  .sub { color: #5b6472; font-size: 14px; margin: 0 0 28px; }
+  h2 { font-size: 18px; margin: 32px 0 8px; }
+  p, li { font-size: 15px; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  .box {
+    background: #eef4ff;
+    border-left: 4px solid #2f6fed;
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin: 20px 0;
+    font-size: 15px;
+  }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 14px; }
+  th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid #e3e6ea; vertical-align: top; }
+  th { background: #f2f4f7; font-weight: 600; }
+  footer { margin-top: 36px; padding-top: 18px; border-top: 1px solid #e3e6ea; color: #5b6472; font-size: 13px; }
+  a { color: #2f6fed; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #14171c; color: #e7eaee; }
+    main { background: #1c2027; box-shadow: none; }
+    .sub, footer { color: #9aa4b2; }
+    .box { background: #1e2a3d; border-left-color: #5b8def; }
+    th { background: #232830; }
+    th, td { border-bottom-color: #2c323b; }
+    footer { border-top-color: #2c323b; }
+    a { color: #7aa7ff; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Gizlilik Politikası</h1>
+  <p class="sub">Aile Ligi — Son güncelleme: 18 Eylül 2026</p>
+
+  <div class="box">
+    <strong>Özet:</strong> Aile Ligi, bir ailenin kendi üyeleri arasında görev, puan ve ödül
+    takibi yapmasını sağlayan bir uygulamadır. Verileriniz yalnızca ailenizin hesabına
+    bağlı olarak saklanır; üçüncü kişilere satılmaz, reklam amacıyla paylaşılmaz.
+  </div>
+
+  <h2>1. Hangi verileri topluyoruz?</h2>
+  <table>
+    <tr><th>Veri</th><th>Amaç</th></tr>
+    <tr>
+      <td>E-posta adresi ve şifre</td>
+      <td>Ebeveyn hesabı oluşturma ve giriş yapma. Şifreler kimse tarafından okunamayacak şekilde şifrelenerek saklanır.</td>
+    </tr>
+    <tr>
+      <td>Aile üyelerinin adları, rolleri (ebeveyn/çocuk) ve avatar simgeleri</td>
+      <td>Uygulama içinde üyeleri göstermek, puanları ve görevleri kişilere atamak.</td>
+    </tr>
+    <tr>
+      <td>Görev, puan, ödül, ceza ve alışveriş listesi kayıtları</td>
+      <td>Uygulamanın temel işlevi: aile içi görev ve puan takibi.</td>
+    </tr>
+    <tr>
+      <td>Aile fotoğrafı (isteğe bağlı)</td>
+      <td>Yalnızca sizin seçtiğiniz bir fotoğraf, aile kartında gösterilmek üzere küçültülerek saklanır. Fotoğrafa erişim yalnızca siz izin verdiğinizde ve yalnızca seçtiğiniz tek kare için geçerlidir.</td>
+    </tr>
+  </table>
+  <p>
+    Uygulama; konum, kişi listesi, takvim, mikrofon, kamera görüntüsü veya sağlık verisi
+    <strong>toplamaz</strong>. Reklam kimliği kullanmaz ve reklam göstermez.
+  </p>
+
+  <h2>2. Veriler nerede saklanıyor?</h2>
+  <p>
+    Veriler, uygulamanın altyapı sağlayıcısı <strong>Supabase</strong> üzerinde barındırılan
+    sunucularda saklanır. Veritabanı, yalnızca aynı aileye bağlı hesapların kendi aile
+    verilerine erişebilmesini sağlayan erişim kurallarıyla korunur. Veriler aktarım sırasında
+    (HTTPS/TLS) şifrelenir.
+  </p>
+  <p>
+    Uygulamanın "demo modu"nda hiçbir veri sunucuya gönderilmez; tüm bilgiler yalnızca
+    kullandığınız cihazda saklanır.
+  </p>
+
+  <h2>3. Verileri kimler görebilir?</h2>
+  <ul>
+    <li>Aynı aile kodunu kullanan aile üyeleri, o ailenin görev ve puan bilgilerini görebilir.</li>
+    <li>Verileriniz üçüncü taraflara satılmaz, kiralanmaz veya pazarlama amacıyla paylaşılmaz.</li>
+    <li>Yalnızca yasal bir zorunluluk hâlinde yetkili mercilerle paylaşılabilir.</li>
+  </ul>
+
+  <h2>4. Verilerinizi silme ve hesabınızı kapatma</h2>
+  <p>
+    Uygulama içinden üye silebilir, kayıtları kaldırabilir ve oturumu kapatabilirsiniz.
+    Hesabınızın ve ailenize ait tüm verilerin kalıcı olarak silinmesini talep etmek için
+    aşağıdaki e-posta adresinden bize ulaşabilirsiniz. Talebiniz en geç 30 gün içinde
+    sonuçlandırılır.
+  </p>
+
+  <h2>5. Çocukların gizliliği</h2>
+  <p>
+    Uygulama aileler tarafından kullanılmak üzere tasarlanmıştır ve çocuklara ait bilgiler
+    yalnızca ebeveynin oluşturduğu üye kayıtları kapsamında (ad, avatar, puan) işlenir.
+    Çocuklardan doğrudan e-posta, telefon numarası veya konum gibi kişisel bilgi
+    istenmez. Ebeveynler, çocuklarına ait kayıtları diledikleri zaman silebilir.
+  </p>
+
+  <h2>6. Veri saklama süresi</h2>
+  <p>
+    Verileriniz, hesabınız aktif olduğu sürece saklanır. Silme talebiniz üzerine veya
+    hesabınız kapatıldığında aile verileri kalıcı olarak silinir.
+  </p>
+
+  <h2>7. Politika değişiklikleri</h2>
+  <p>
+    Bu politika güncellendiğinde, sayfanın üst kısmındaki "Son güncelleme" tarihi
+    değiştirilir. Önemli değişiklikler uygulama içinde duyurulur.
+  </p>
+
+  <h2>8. İletişim</h2>
+  <p>
+    Gizlilikle ilgili soru, talep ve silme başvurularınız için:
+    <br>
+    <strong>E-posta:</strong> <a href="mailto:emin.mersin1@gmail.com">emin.mersin1@gmail.com</a>
+  </p>
+
+  <footer>
+    Aile Ligi · com.eminmersin.aileligi · Bu sayfa Google Play "Uygulama içeriği" ve
+    "Veri güvenliği" beyanları için gizlilik politikası olarak kullanılabilir.
+  </footer>
+</main>
+</body>
+</html>
